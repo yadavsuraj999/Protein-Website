@@ -64,6 +64,10 @@
     margin-bottom: 120px;
 }
 
+.mar-bottom2{
+    margin-bottom: 400px;
+}
+
 .leher2{
     position: absolute;
     top: 0;
@@ -90,6 +94,13 @@
 .padding-2{
     padding-bottom: 80px !important;
 }
+.padding-4{
+    padding-bottom: 120px !important;
+}
+
+.padding-3{
+    padding-top: 300px;
+}
 
 .bg-color{
     background-color: #e9ecef;
@@ -110,4 +121,66 @@
 .box h3{
     font-size: 65px !important;
     font-weight: 700 !important;
+}
+.box h2{
+    font-size: 50px !important;
+    font-weight: 700 !important;
+}
+
+.bg-color3{
+    background-color: #ff4501;
+}
+
+.fb{
+    transition: 0.3s all linear;
+}
+
+.fb:hover{
+    background-color: blue !important;
+}
+
+.tw{
+    transition: 0.3s all linear;
+}
+
+.tw:hover{
+    background-color: rgba(0, 0, 0, 0.649) !important;
+}
+
+.gl{
+    transition: 0.3s all linear;
+}
+
+.gl:hover{
+    background-color: rgba(0, 0, 255, 0.716) !important;
+}
+
+.pi{
+    background-color: #c8232c;
+    transition: 0.3s all linear;
+}
+
+.pi:hover{
+    background-color: #c8232bc3!important;
+}
+
+.lk{
+    background-color: #0e76a8;
+    transition: 0.3s all linear;
+}
+.lk:hover{
+    background-color: #0e77a8af;
+}
+
+
+.font-size{
+    font-size: 20px !important;
+}
+
+.font-size2{
+    font-size: 20px !important;
+}
+
+footer{
+    margin-top: -195px;
 }
