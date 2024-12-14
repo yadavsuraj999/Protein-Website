@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 </head>
 
-<body>
-    <header class="bgcolor">
+<body class="">
+    <header class=" position-fixed w-100 z-5">
         <div class="container">
             <div
-                class="d-flex align-items-center justify-content-between rounded-bottom border border-dark border-top-0 bg-success">
+                class="d-flex bgcolor align-items-center justify-content-between rounded-bottom border-top-0 bg-success    ">
                 <div class="ms-4">
                     <img src="./assets/image/logo-dark.png" alt="">
                 </div>
@@ -34,7 +34,14 @@
                 <div class="fw-semibold fs-5 d-flex gap-4 text-white">
                     <span><i class="ri-search-line"></i></span>
                     <span><i class="ri-shopping-bag-line"></i></span>
-                    <span class="me-4"><i class="ri-more-fill"></i></span>
+                    <span class="me-4 menu"><i class="ri-more-fill"></i></span>
+                    <div class="menu2 bg-color7 d-none">
+                        <ul class="px-5 py-3 lh-lg">
+                            <li>About</li>
+                            <li>Pricing</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,17 +50,16 @@
     <!-- main-section -->
     <section class=" bgcolor position-relative">
         <div class="container">
-            <div class="row">
+            <div class="row padding-5">
                 <div class="col-lg-6 col-12">
-                    <div class="pt-5 mt-5 position-relative z-1">
+                    <div class="pt-5  position-relative z-1">
                         <div>
-                            <h2 class="font-size fw-bold">
-                                <span class="link-underline-success text-white">Extra Protein <br> for You.</span>
+                            <h2 class=" fw-bold f-1">
+                                <span class=" text-white ">Extra Protein <br> for You.</span>
                             </h2>
-                            <p class="mb-4 text-white">Unleash vitality &amp; strength with Extra Power Proteins.
-                                Elevate
-                                <br> workouts,
-                                amplify muscle growth, &amp; ignite energy levels for your <br> high-performance
+                            <p class="mb-4 pt-4 text-white fs-5">Unleash vitality strength with Extra Power Proteins.
+                                Elevate workouts,
+                                amplify muscle growth, ignite energy levels for your high-performance
                                 lifestyle.
                             </p>
                         </div>
@@ -333,14 +339,17 @@
 
                 <div class="col-lg-6 col-12">
                     <div class="h-100 bg-white p-5 rounded">
-                        <div class="row">
-                            <div class="col-6">
-                                <h3 class="fs-2 mb-3">Energy Drink</h3>
-                                <p class="mb-0">Revitalize your day with a burst of energy from our drinks.</p>
-                                <button class="py-2 px-3 mt-5 rounded-pill fw-bold bg-success border-0 text-white">Learn
-                                    More</button>
+                        <div class="row gy-4">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="">
+                                    <h3 class="fs-2 mb-3">Energy Drink</h3>
+                                    <p class="mb-0">Revitalize your day with a burst of energy from our drinks.</p>
+                                    <button
+                                        class="py-2 px-3 mt-5 rounded-pill fw-bold bg-success border-0 text-white">Learn
+                                        More</button>
+                                </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-12">
                                 <img src="./assets/image/drink.jpg" alt="" class=" rounded" width="100%">
                             </div>
                         </div>
@@ -348,14 +357,14 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="h-100 bg-white p-5 rounded">
-                        <div class="row">
+                        <div class="row gy-4">
                             <div class="col-lg-6 col-md-6 col-12">
                                 <h3 class="fs-2 mb-3">Capsules</h3>
                                 <p class="mb-0">Effortless wellness in a single, easy-to-take dose.</p>
                                 <button class="py-2 px-3 mt-5 rounded-pill fw-bold bg-success border-0 text-white">Learn
                                     More</button>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-12">
                                 <img src="./assets/image/capsule.jpg" alt="" class=" rounded" width="100%">
                             </div>
                         </div>
@@ -633,10 +642,10 @@
 
             <div class="row text-center mt-5 pb-4">
                 <div class="col-md-4 col-12">
-                    <p class="fw-semibold fs-5 text-white">Call Us: (1) 22 55412474</p>
+                    <p class="fw-normal fs-5 text-white">Call Us: (+91) 95 74242726</p>
                 </div>
                 <div class="col-md-4 col-12">
-                    <p class="fw-semibold fs-5 text-white">Email Us: info@canvas.com</p>
+                    <p class="fw-normal fs-5 text-white">Email Us: yadavsuraj8425@gmail.com</p>
                 </div>
                 <div class="col-md-4 col-12">
                     <span class="fb p-2 rounded-circle text-white bg-primary"><i class="ri-facebook-fill"></i></span>
@@ -649,6 +658,13 @@
         </div>
     </footer>
 
+    <!-- goto-top -->
+    <div id="scroll-btn" class="scroll-up d-none">
+        <span class="p-2 border border-success bg-success text-white fs-5 fw-normal"><i class="ri-arrow-up-line"></i></span>
+    </div>
+
+    <!-- Jquery-link -->
+     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <!-- bootstrap-js-link -->
     <script src="./assets/js/bootstrap.js"></script>
 
@@ -672,6 +688,31 @@
             },
         });
     </script>
+
+<script>
+    $(document).ready(function () {
+        $('#scroll-btn').on('click', function () {
+            $(window).scrollTop(0);
+        })
+        $(".menu").on('click', function(){
+            $(".menu2").toggleClass("d-none")
+        })
+    })
+</script>
+
+
+<script>
+    $(window).scroll(function(){
+
+      if(scrollY > 400){
+            $(".scroll-up").removeClass("d-none");
+        }
+        else{
+            $(".scroll-up").addClass("d-none");
+        }
+    })
+
+</script>
 </body>
 
 </html>
