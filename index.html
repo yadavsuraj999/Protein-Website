@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Supplement</title>
 
     <!-- style-css-link -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,18 +14,20 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- swiper-css-link -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!-- favicon-link -->
+    <link rel="icon" type="" href="assets/image/hero.png">
 </head>
 
 <body class="">
     <header class=" position-fixed w-100 z-5">
         <div class="container">
             <div
-                class="d-flex bgcolor align-items-center justify-content-between rounded-bottom border-top-0 bg-success    ">
+                class="d-flex bgcolor align-items-center justify-content-between rounded-bottom border-top-0 bg-success">
                 <div class="ms-4">
                     <img src="./assets/image/logo-dark.png" alt="">
                 </div>
                 <div>
-                    <ul class="d-lg-flex d-none text-white gap-5 fw-semibold fs-5 ">
+                    <ul class="d-lg-flex d-none text-white gap-5 fw-semibold fs-5 cur">
                         <li>About</li>
                         <li>Pricing</li>
                         <li>Contact</li>
@@ -37,9 +39,9 @@
                     <span class="me-4 menu"><i class="ri-more-fill"></i></span>
                     <div class="menu2 bg-color7 d-none">
                         <ul class="px-5 py-3 lh-lg">
-                            <li>About</li>
-                            <li>Pricing</li>
-                            <li>Contact</li>
+                            <li><a href="#about" >About</a></li>
+                            <li><a href="#price" >Pricing</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,8 +91,8 @@
                                 </ul>
                             </div>
                             <div class="mt-4 d-flex align-items-center gap-5">
-                                <button class="py-3 px-5 rounded-pill fw-bold bg-light">Learn More</button>
-                                <span class="fs-5 fw-semibold text-white">All Products</span>
+                                <button class="py-3 px-5 rounded-pill fw-bold bg-light border-0">Learn More</button>
+                                <span class="fs-4 fw-semibold text-white">All Products</span>
                             </div>
                         </div>
                     </div>
@@ -138,7 +140,7 @@
     </section>
 
     <!-- About Section -->
-    <section>
+    <section id="about">
         <div class="margin-y">
             <div class="container">
                 <div class="text-center">
@@ -318,7 +320,7 @@
     </section>
 
     <!-- Supplement-Section -->
-    <section class="bg-color padding-2">
+    <section class="bg-color padding-2 " id="price">
         <div class="container pt-5">
             <div class="row gy-4">
                 <div class="col-lg-6 col-12">
@@ -552,7 +554,7 @@
 
     <!-- Contact-Section -->
 
-    <section class="contact position-relative z-1">
+    <section class="contact position-relative z-1" id="contact">
         <div class="container">
             <div class="row bg-color3 align-items-center">
                 <div class="col-lg-6 col-12 p-0">

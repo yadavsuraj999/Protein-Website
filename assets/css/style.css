@@ -3,6 +3,11 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+a{
+    color: white !important;
 }
 
 .font-size{
@@ -197,6 +202,7 @@ footer{
 }
 
 .cop li{
+    cursor: pointer;
     transition: 0.3s all linear;
 }
 
@@ -223,10 +229,24 @@ body{
 
 .menu2{
     position: absolute;
-    top: 50px;
+    top: 60px;
     cursor: pointer;
+    border-radius: 11px;
+    
 }
+
+.menu2 ul li a{
+    transition: 0.3s all linear;
+}
+.menu2 ul li a:hover{
+    color: #ffffff71;
+}
+
 
 .bg-color7{
     background-color: #09da78;
+}
+
+.cur li{
+    cursor: pointer;
 }
